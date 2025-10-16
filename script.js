@@ -102,7 +102,7 @@ function moveEnemies() {
             enemy.style.left = (parseInt(enemy.style.left) + direction) + 'px';
         });
 
-    }, 50);
+    }, 100);
 }
 
 function gameOver() {

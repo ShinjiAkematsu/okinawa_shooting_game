@@ -23,6 +23,33 @@ body {
     background-color: #d9534f; /* シーサーの赤 */
     bottom: 10px;
     left: 275px;
+    border-radius: 10px;
+}
+
+#player::before, #player::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+}
+
+/* 目 */
+#player::before {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 10px;
+    left: 8px;
+    box-shadow: 26px 0 0 white; /* もう片方の目 */
+}
+
+/* 鼻 */
+#player::after {
+    width: 15px;
+    height: 10px;
+    background-color: #a94442; /* 少し暗い赤 */
+    border-radius: 3px;
+    top: 25px;
+    left: 17.5px;
 }
 
 .enemy {
